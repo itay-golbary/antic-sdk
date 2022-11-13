@@ -1,0 +1,46 @@
+name: Code Analysis workflow
+
+on:
+  pull_request:
+
+jobs:
+  dependencies:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Dependencies
+      run: |
+        npm install
+  lint:
+    needs: dependencies
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Dependencies
+      run: |
+        npm install
+    - name: Lint
+      run: |
+        npm run lint:ci
+  test:
+    needs: dependencies
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Dependencies
+      run: |
+        npm install
+    - name: Test
+      run: |
+        npm run test:ci
+  build:
+    needs: [lint, test]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Dependencies
+      run: |
+        npm install
+    - name: Build
+      run: |
+        npm run build:ci
