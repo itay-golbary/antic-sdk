@@ -1,5 +1,23 @@
 # Antic SDK challenge
 
+## Focus
+* architecture
+* state management
+* clean configuration
+* flow
+
+## To-Do
+* config with webpack for performance, optimization and uglify
+* publish package to npm
+* add styles to components
+* setup api configuration
+* handle app authentication
+* convert to css modules and config with webpack
+* handle hashRouter for deep linking
+* fix code-analysis workflow to cache dependencies
+* add tests
+
+
 ## Create Package
 
 ```bash
@@ -11,7 +29,7 @@ npm pack
 ## Installation
 
 ```bash
-npm install ./antic-sdk-0.5.0.tgz
+npm install ./antic-sdk-0.5.1.tgz
 ```
 
 ## Usage
@@ -67,17 +85,6 @@ import Antic from antic-sdk
 ## Outputs
 * [CommonJS](./dist/cjs)
 * [ECMAScript](./dist/esm)
-
-## To-Do
-* config with webpack for performance, optimization and uglify
-* publish package to npm
-* setup api configuration
-* handle app authentication
-* convert to css modules and config with webpack
-* handle hashRouter for deep linking
-* fix code-analysis workflow to cache dependencies
-* add tests
-
 
 ## Architecture
 ![Architecture](/assets/ReactArchitecturev2.jpg)
