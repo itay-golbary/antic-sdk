@@ -57,12 +57,12 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itay-golbary/package-test.git"
+    "url": "git+https://github.com/itay-golbary/antic-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/itay-golbary/package-test/issues"
+    "url": "https://github.com/itay-golbary/antic-sdk/issues"
   },
-  "homepage": "https://github.com/itay-golbary/package-test#readme",
+  "homepage": "https://github.com/itay-golbary/antic-sdk#readme",
   "files": [
     "dist",
     "README.md"
